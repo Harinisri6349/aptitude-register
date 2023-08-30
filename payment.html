@@ -1,0 +1,193 @@
+<html>
+    <head>
+    <title>Payment</title>
+    <style>
+    .loo{
+    text-decoration-line: none;
+    background-color:cornflowerblue;
+    border: 2px darkblue solid;
+    border-radius: 5px;
+    width: 100;
+    height: 30;
+    }
+    .loo:hover{
+    background-color:blue;
+    }
+    .item{
+    width:100%;
+    margin:auto;
+   
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:darkblue;
+    }
+    .item ul li{
+    list-style: none;
+    display: inline-block;
+   
+    }
+    .item ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    }
+    a{
+    font-size: 17px;
+    }
+    li:hover{
+    background-color:orangered;
+    }
+    form {
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px 2px black;
+    height:600px;
+    width:500px;
+    margin: auto;
+    padding: 10px;
+    }
+    .new{
+    border: 1px solid black;
+    height:30px;
+    width:490px;
+    padding:5px;
+    text-align: center;
+    background-color: orangered;
+    color:darkblue;
+    }
+    #colu:active{
+    background-color: orangered;
+    cursor: pointer;
+    }
+   
+    #colu{
+    width: 150px;
+    height:50px;
+    }
+    #cel:active{
+    background-color: orangered;
+    cursor: pointer;
+    }
+    #cel{
+    width: 150px;
+    height:50px;
+    }
+    #cre:active{
+    background-color: orange;
+    cursor: pointer;
+    }
+    #cre{
+    width: 250px;
+    height: 50px;
+    }
+    #pay:visited{
+    background-color: orange;
+    cursor: pointer;
+    }
+    #pay{
+    width: 250px;
+    height: 50px;
+    }
+    #now:active{
+    background-color:blue;
+    }
+    #now{
+    width: 500px; height: 50px;
+    background-color: orangered;
+    border:2px solid black ;
+    }
+    .wel{
+    text-decoration: none;
+    color:darkblue;
+    font-size:xx-large;
+    }
+   
+    </style>
+    </head>
+    <body >
+    <table width="90%" >
+    <tr><td><img src="k.jpg" ><th><h2>KARPAGAM COLLEGE OF ENGINEERING
+   APTITUDE EXAMINATION</h2></th>
+   
+    </table>
+    <div class="item">
+   
+    <ul>
+    <li ><a href="index.html">
+   Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li><a href="about us.html">About
+   us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li><a
+   href="information.html">Information</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+    </div>
+   
+   
+    <script>
+    function col(color){
+    document.getElementById("colu").style.background=color;
+    }
+    function mal(color){
+    document.getElementById("cel").style.background=color;
+    }
+    function card(color){
+    document.getElementById("cre").style.background=color;
+    }
+    function pal(color){
+    document.getElementById("pay").style.background=color;
+    }
+   
+    function complete(){
+    alert('Payment Successfully Completed');
+    }
+    </script>
+    <form>
+    <h2 class="new">Payment Form</h2>
+    <h4>Account</h4>
+   
+    <table>
+    <tr><th><input type="text" placeholder="Full Name" style="height:30px;
+   width:250px;"></th>
+    <th><input type="number" placeholder="Name of Card" style="height:30px;
+   width:250px;"></th>
+   
+    <tr><th colspan="2"><br><input type="text" placeholder="Email Address"
+   style="height:30px; width: 500px;"></th></tr>
+    <tr><th colspan="2"><br><input type="text" placeholder=" Address" style="height:30px;
+   width: 500px;"></th></tr>
+    <tr><th colspan="2"><br><input type="text" placeholder=" city" style="height:30px;
+   width: 500px;"></th></tr>
+    </table>
+    <p>Date of Birth &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+   &nbsp;&nbsp; &nbsp; &nbsp;Gender</p>
+    <TABLE>
+   
+    <tr><th><input type="number" placeholder="DD" style="height: 40px; width:
+   50px;"></th><th>
+    <input type="number" placeholder="MM" style="height: 40px; width:
+   50px;"></th><th>
+    <input type="number" placeholder="YYYY" style="height: 40px; width:
+   70px;"></th><th></th><th></th><button >
+    <th style="border: 2px solid black; width:150px; height: 40px;">
+    <button type="button" id="cel" onclick="mal('orangered')">
+   Male</button></th>
+    <th style="border: 2px solid black; width:150px; height: 40px; ">
+    <button type="button" id="colu"
+   onclick="col('orangered')">Female</button></th></tr>
+    </TABLE>
+    <p>Payment Details</p>
+    <table><tr><td style="border: 2px solid black; width:250px; height:40px;"><button
+   type="button"id="cre" onclick="card('orange')">Credit Card</button></td>
+    <td style="border: 2px solid black; width:250px; height:40px;"><button type="button"
+   id="pay" onclick="pal('orange')" >Paypal</button></td></tr></table>
+    <br>
+    <table><th><input type="number" placeholder="Card Number 1111-2222-3333-4444"
+   style="width: 500px; height: 30px;"></th></table>
+    <br>
+    <table><th><button type="button"id="now" ><a href="complete.html"
+   class="wel"onclick="complete()">PAY NOW</a></button></th></table>
+    </form>
+    <button type="button" class="loo"><a href="upload.html">Prev</a></button>
+    </body>
+   </html>

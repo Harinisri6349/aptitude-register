@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <style>
+             .item{
+ width:100%;
+ margin:auto;
+
+ display:flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color:darkblue;
+ }
+ .item ul .dis{
+ list-style: none;
+ display: inline-block;
+
+ }
+ .item ul .dis a{
+ text-decoration: none;
+ color:white;
+ text-transform: uppercase;
+ }
+ a{
+ font-size: 17px;
+ }
+ .dis:hover{
+ background-color:orangered;
+ }
+ .temp {
+ background-color:orangered;
+ color:lightyellow;
+ }
+ .up{
+    text-align: center;
+    text-decoration: underline;
+    color:orangered;
+    text-decoration-color: darkblue;
+ }
+ .box{
+    border: 1px solid orangered;
+    background-color: beige;
+
+ }
+ .sub{
+    float: right;
+    background-color: blue;
+    margin: 20px;
+    border-radius: 20px;
+    color: white;
+ }
+ .pr{
+    float: left;
+    background-color: blue;
+    margin: 20px;
+    border-radius: 20px;
+    color: white;
+ }
+        </style>
+    </head>
+    <body>
+        <table width="90%" >
+            <tr><td><img src="klogo.png" ></td><th><h2>KARPAGAM COLLEGE OF
+           ENGINEERING APTITUDE EXAMINATION</h2></th>
+           
+            </table>
+            <div class="item">
+
+                <ul>
+                <li class="dis"><a href="index.html">
+               Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="dis"><a href="about.html">About
+               us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="dis"><a
+               href="information.html">Information</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="dis"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                </div>
+                <h1 class="up">Upload Files</h1>
+                <div class="box">
+                    <p>Applicant Passport size photo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" ></p><hr>
+                    <p>Applicant 10th Certificate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" ></p><hr>
+                    <p>Applicant 12th Certificate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" ></p><hr>
+                    <p>Applicant Birth Certificate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" ></p><hr>
+                    <p>Applicant Identity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" ></p><hr>
+                    <p>Applicant Signature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" ></p>
+                </div>
+                <button value="submit" class="sub"> <a href="payment.html"  onclick="subm()" style="color:white">Submit</a></button>
+                <button  value="Prev" class="pr"><a href="registation.html" style="color:white">Prev</a></button> 
+                <script>
+                     function subm(){
+                        alert('Your Files are Submitted Successfully');
+                     }
+                </script>
+    </body>
+</html>
